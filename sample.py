@@ -43,7 +43,7 @@ def handle_message(event):
     
     message = ImageSendMessage(
         original_content_url = 'https://1.bp.blogspot.com/-URMbvUm_6Ig/WlOT11bG06I/AAAAAAABAXo/H287vOLHmD0Lvbd4RbQqSvZwdD5ySIa4gCLcBGAs/s1600/2.jpg',
-        preview_image_url = 'https://1.bp.blogspot.com/-URMbvUm_6Ig/WlOT11bG06I/AAAAAAABAXo/H287vOLHmD0Lvbd4RbQqSvZwdD5ySIa4gCLcBGAs/s1600/2.jpg'   
+        preview_image_url = 'https://2.bp.blogspot.com/-q23gHJN-5hQ/WlOpPeUBEKI/AAAAAAABAZE/oiKCeOOR8Tcuv6XByQ5zgxItZw4F5bjigCLcBGAs/s1600/4.jpg'   
     )
     line_bot_api.reply_message(event.reply_token, message)
     '''
