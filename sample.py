@@ -40,10 +40,17 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     # 回應使用者輸入的話
+    
+    message = ImageSendMessage(
+        original_content_url = 'https://example.com/original.jpg',
+        preview_image_url = 'https://example.com/preview.jpg'   
+    )
+    line_bot_api.reply_message(event.reply_token, message)
+    '''
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=event.message.text))
-
+    '''
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))
