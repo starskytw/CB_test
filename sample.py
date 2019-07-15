@@ -42,8 +42,8 @@ def handle_message(event):
     # 回應使用者輸入的話
     
     message = ImageSendMessage(
-        original_content_url = 'https://example.com/original.jpg',
-        preview_image_url = 'https://example.com/preview.jpg'   
+        original_content_url = 'https://www.facebook.com/photo.php?fbid=975507332546305&set=a.102012123229168&type=3&theater',
+        preview_image_url = 'https://www.facebook.com/photo.php?fbid=2192822987481394&set=a.102012123229168&type=3&theater'   
     )
     line_bot_api.reply_message(event.reply_token, message)
     '''
